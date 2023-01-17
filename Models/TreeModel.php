@@ -9,7 +9,6 @@ class TreeModel
         $child_count = rand($child_count_data->min_count, $child_count_data->max_count);
         $this->child_count = $child_count;
         $this->child_metadata = $child_data;
-        print("child_count = ".$this->child_count."\n");
     }
     
     public function populateTree($child_type = "ProductModel") {

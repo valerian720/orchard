@@ -12,7 +12,12 @@ class ProductsCollectorModel
             }
             $prod_count[$tmp_type]++;
         }
-        print_r($prod_count);
+        //
+        foreach ($prod_count as $prod_name => $count) {
+            $tmp_name = strtolower(str_replace("Model","", $prod_name));
+            print("count of ${tmp_name} is ${count}\n");
+        }
+        print("\n");
     }
 
     public function reportProductWeight() {
@@ -24,7 +29,12 @@ class ProductsCollectorModel
             }
             $prod_weight[$tmp_type] += $product->getWeight();
         }
-        print_r($prod_weight);
+        // 
+        foreach ($prod_weight as $prod_name => $count) {
+            $tmp_name = strtolower(str_replace("Model","", $prod_name));
+            print("weight of ${tmp_name} is ${count}g\n");
+        }
+        print("\n");
     }
 
     public function fillBucket($garden) {

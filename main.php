@@ -60,6 +60,7 @@ $collector->reportProductWeight();
 
 ///////////////////////////////
 // second pass
+
 // $garden->growProduct();
 // $collector->fillBucket($garden);
 // $collector->reportProductCount();
@@ -67,5 +68,6 @@ $collector->reportProductWeight();
 ////////////////////////////////
 
 //
-$collector->emptyBucket();
+$harvest = $collector->emptyBucket();
+// print_r($harvest);
 ?>
