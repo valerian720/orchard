@@ -17,7 +17,7 @@ class TreeModel
         }
     }
     
-    public function getProdicts() {
+    public function getProducts() {
         $ret = $this->children;
         $this->children = [];
 

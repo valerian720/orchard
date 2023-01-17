@@ -40,7 +40,7 @@ class ProductsCollectorModel
     public function fillBucket($garden) {
         //
         foreach ($garden->getTrees() as $tree) {
-            foreach ($tree->getProdicts() as $product) {
+            foreach ($tree->getProducts() as $product) {
                 $this->bucket[] = $product;
             }
         }
