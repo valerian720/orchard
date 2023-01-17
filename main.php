@@ -58,6 +58,14 @@ $collector->reportProductCount();
 // weight products per type
 $collector->reportProductWeight();
 
+///////////////////////////////
+// second pass
+// $garden->growProduct();
+// $collector->fillBucket($garden);
+// $collector->reportProductCount();
+// $collector->reportProductWeight();
+////////////////////////////////
+
 //
 $collector->emptyBucket();
 ?>
