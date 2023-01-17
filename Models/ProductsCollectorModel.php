@@ -18,6 +18,7 @@ class ProductsCollectorModel
             print("count of ${tmp_name} is ${count}\n");
         }
         print("\n");
+        return $prod_count;
     }
 
     public function reportProductWeight() {
@@ -35,6 +36,7 @@ class ProductsCollectorModel
             print("weight of ${tmp_name} is ${count}g\n");
         }
         print("\n");
+        return $prod_weight;
     }
 
     public function fillBucket($garden) {
@@ -44,6 +46,10 @@ class ProductsCollectorModel
                 $this->bucket[] = $product;
             }
         }
+    }
+
+    public function getBucket() {
+        return $this->bucket;
     }
 
     public function emptyBucket() {
